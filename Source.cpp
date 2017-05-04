@@ -9,7 +9,7 @@
 //int getSum(int myArray[]);
 //int getSumOfSquares(int myArray[]);
 //void printAsChars(int myArray[]);
-//double getAverage(int myArray[]);
+double getAverage(int myArray[]);
 int subtractAllValues(int myArray[]);
 //float invertAllValues(int myArray[] );
 void printGroupMemberNames();
@@ -39,6 +39,20 @@ int subtractAllValues(int myArray[])
 	}
 }
 
+// my function is getAverage
+
+double getAverage(int myArray[]) {
+	double total, average;
+	int count = 0;
+	int i;
+	for (i = 0; i < 500; ++i) {
+		total += myArray[i];
+		count++;
+	}
+	average = total / count;
+	return average;
+
+}
 
 
 
