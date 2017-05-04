@@ -22,8 +22,6 @@ int main(void) {
 		row[i] = i;
 	subtractAllValues(row);
 
-
-
 	for (i = 0; i < 500; i++)
 		printf("%d ", row[i]);
 
@@ -39,18 +37,17 @@ int subtractAllValues(int myArray[])
 	}
 }
 
-// my function is getAverage
+// I just changed getAverage Function
 
 double getAverage(int myArray[]) {
-	double total, average;
+	double total = 0;
 	int count = 0;
 	int i;
 	for (i = 0; i < 500; ++i) {
 		total += myArray[i];
 		count++;
 	}
-	average = total / count;
-	return average;
+	return total / count;
 
 }
 
