@@ -7,10 +7,10 @@
 */
 
 //int getSum(int myArray[]);
-int getSumOfSquares(int myArray[]);
+//int getSumOfSquares(int myArray[]);
 //void printAsChars(int myArray[]);
 //double getAverage(int myArray[]);
-//int subtractAllValues(int myArray[]);
+int subtractAllValues(int myArray[]);
 //float invertAllValues(int myArray[] );
 void printGroupMemberNames();
 
@@ -20,18 +20,23 @@ int main(void) {
 	int row[500], i;
 	for (i = 0; i < 500; i++)
 		row[i] = i;
+	subtractAllValues(row);
 
+
+
+	for (i = 0; i < 500; i++)
+		printf("%d ", row[i]);
+
+	return 1;
 }
 
-int getSumOfSquares(int myArray[])
+int subtractAllValues(int myArray[])
 {
 	int i;
-	int sum = 0;
-	for (i = 0; i < 500; i++)
-	{
-		sum += myArray[i] * myArray[i];
+	//printf("subtractAllValues = ");
+	for (i = 0; i<500; ++i) {
+		myArray[i] = -myArray[i];
 	}
-	return sum;
 }
 
 
@@ -44,7 +49,5 @@ void printGroupMemberNames() {
 	printf("Sotheng Chheang\n");
 	printf("Savorn Chea\n");
 	printf("Madalen Iv\n");
-
 }
-
 
