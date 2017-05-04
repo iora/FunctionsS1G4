@@ -26,14 +26,14 @@ int main(void) {
 		printf("%d ", row[i]);
 	}
 	printf("\nThe subtractallvalues of all number is: %d\n", subtractAllValues(row));
-	printf("The sumofsquares of all number is: %d\n", getSumOfSquares(row));
-	printf("The averange of all number is: %f\n", getAverage(row));
-	printf("The sum of all number is: %d\n", getSum(row));
-	printf("printAsChars function:");
+	printf("\nThe sumofsquares of all number is: %i\n", getSumOfSquares(row));
+	printf("\nThe averange of all number is: %f\n", getAverage(row));
+	printf("\nThe sum of all number is: %d\n", getSum(row));
+	printf("\nprintAsChars function:");
 	printAsChars(row);
 	return 0;
 }
-float invertAllValues(int myArray[]) //invertAllValues
+float invertAllValues(int myArray[]) // Dara Chheang
 {
 	int myBrray[500];
 	int i;
@@ -44,16 +44,15 @@ float invertAllValues(int myArray[]) //invertAllValues
 		myArray[i] = myBrray[i];
 	return 0;
 }
-void printAsChars(int myArray[]) { //printAsChars
-	int iCharLen = 500;
+void printAsChars(int myArray[]) { // Sotheng Chheang
+	int iCharLen = 500; //length
 	int i;
-
 	for (i = 0; i<iCharLen; i++)
 	{
 		printf("%c", myArray[i]);
 	}
 }
-int getSumOfSquares(int myArray[]) //getSumSquares
+int getSumOfSquares(int myArray[]) // Madalen Iv
 {
 	int i;
 	int sum = 0;
@@ -63,7 +62,7 @@ int getSumOfSquares(int myArray[]) //getSumSquares
 	}
 	return sum;
 }
-int subtractAllValues(int myArray[]) //SubtractAllValues
+int subtractAllValues(int myArray[]) // Rathanaphea Chan
 {
 	int i;
 	//printf("subtractAllValues = ");
@@ -71,7 +70,7 @@ int subtractAllValues(int myArray[]) //SubtractAllValues
 		myArray[i] = -myArray[i];
 	}
 }
-double getAverage(int myArray[]) //getAvg
+double getAverage(int myArray[]) //Sovorn Chea
 {
 	double total = 0;
 	int count = 0;
@@ -82,7 +81,7 @@ double getAverage(int myArray[]) //getAvg
 	}
 	return total / count;
 }
-int getSum(int myArray[]) //getSum
+int getSum(int myArray[]) //Chhorleang Horm
 {
 	int i;
 	int sum = 0;
